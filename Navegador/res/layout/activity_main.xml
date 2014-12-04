@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="80dp"
+        android:layout_height="125dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000" >
+
+        <EditText
+            android:id="@+id/txtlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btagregarfavorito"
+            android:layout_toRightOf="@+id/btbuscar"
+            android:ems="10"
+            android:singleLine="true" 
+            android:textColor="#ffffff">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btagregarfavorito"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/fav2" />
+
+        <ImageButton
+            android:id="@+id/btbuscar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/find" />
+
+        <ImageButton
+            android:id="@+id/btadelante"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/btactualizar"
+            android:layout_toRightOf="@+id/btactualizar"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ir" />
+
+        <ImageButton
+            android:id="@+id/btvolver"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btagregarfavorito"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/btactualizar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btagregarfavorito"
+            android:layout_toRightOf="@+id/btvolver"
+            android:background="@android:color/transparent"
+            android:src="@drawable/refresh" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btadelante"
+            android:background="#DF7401"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="@dimen/activity_vertical_margin"
+            android:popupBackground="#ffffff"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/btborrarfav"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/spinner1"
+            android:layout_toRightOf="@+id/txtlink"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/exit" />
+
+        <ImageButton
+            android:id="@+id/btborrarhistorial"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/spinner1"
+            android:layout_toRightOf="@+id/TextView01"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/hist" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spinner1"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/btadelante"
+            android:text="  Borrar \nHistorial"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btborrarfav"
+            android:layout_toLeftOf="@+id/btborrarfav"
+            android:text="  Borrar \nFavorito"
+            android:textColor="#FFF" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2" />
+
+</RelativeLayout>

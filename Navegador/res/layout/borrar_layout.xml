@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/exit" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background="#8B0000"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="@dimen/activity_vertical_margin"
+        android:popupBackground="#ffffff"
+        android:textAlignment="textStart"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btlisto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#151515"
+        android:drawableRight="@drawable/ok"
+        android:text=" Volver!   "
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/txt_borra"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:ems="10"
+        android:singleLine="true"
+        android:textColor="#ffffff" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="Borrar Favorito"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btborra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_borra"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="#151515"
+        android:drawableLeft="@drawable/trash"
+        android:text=" Borrar!   "
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_borra"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="53dp"
+        android:text="Seleccionado:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_borra"
+        android:layout_alignBottom="@+id/txt_borra"
+        android:layout_toLeftOf="@+id/txt_borra"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
